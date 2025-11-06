@@ -13,7 +13,7 @@ toggleGalleryBtn.addEventListener('click', () => {
 });
 
 speakBtn.addEventListener('click', () => {
-    const message = "Happy Birthday Sui! You are the first friend, first person, absolute and only best friend, my person. I love you so much.";
+    const message = "Happy Birthday Papaluu! May all your dreams come true ✨ and your smile never fade, just like the joy you bring to everyone around you. Wishing you a day filled with love, laughter, and unforgettable moments. Cheers to another year of amazing adventures ahead! god bless you thalli... 🎉🎂";
     const utterance = new SpeechSynthesisUtterance(message);
     utterance.rate = 0.95;
     utterance.pitch = 1.1;
@@ -95,6 +95,13 @@ document.addEventListener('mousemove', (e) => {
     setTimeout(() => {
         sparkle.remove();
     }, 1200);
+});
+document.getElementById('startSurprise').addEventListener('click', () => {
+    const intro = document.getElementById('introScreen');
+    intro.style.opacity = '0';
+    setTimeout(() => {
+        intro.style.display = 'none';
+    }, 800);
 });
 document.getElementById('startSurprise').addEventListener('click', () => {
     const intro = document.getElementById('introScreen');
